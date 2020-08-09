@@ -4,9 +4,11 @@
     </head>
     <body>
         <div>
-            <input id="myInput" onkeyup="keyUpInput()">
+            <input id="myInput" style="width: 330px;" onkeyup="keyUpInput()">
+            <a>[Y]循環 [N]播放清單</a>
+            <input type="checkbox" id="myCheck" class="checkbox" style="width: 18px;margin-right: 6px;">
             <input id="submit" type="button" value="submit" onclick="getVideo()">
         </div>
-        <iframe id="video" style="width: 56.25%;height: 95%;" src="" allowfullscreen></iframe>
+        <iframe id="video" style="width: 56.25%;height: 95%;" src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
 </html>
